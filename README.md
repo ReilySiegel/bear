@@ -81,7 +81,7 @@ is lower than 15%
 ./bear --daemon --poll-rate 30 --limit 15 --action suspend
 ```
 
-Other options not covered here can bee seen with `./bear --help`
+Other options not covered here can be seen with `./bear --help`
 ## License
 
 Copyright © 2020 Reily Siegel
