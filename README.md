@@ -1,7 +1,6 @@
 # bear
 
-![AUR
-version](https://img.shields.io/aur/version/reilysiegel-bear-git?style=for-the-badge)
+[![AUR](https://img.shields.io/badge/AUR-reilysiegel--bear--git-informational?style=for-the-badge&logo=arch-linux)](https://aur.archlinux.org/packages/reilysiegel-bear-git/)
 
 A simple utility for easy sleep.
 
