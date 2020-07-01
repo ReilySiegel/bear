@@ -1,5 +1,8 @@
 # bear
 
+![AUR
+version](https://img.shields.io/aur/version/reilysiegel-bear-git?style=for-the-badge)
+
 A simple utility for easy sleep.
 
 ## Motivation
@@ -28,7 +31,12 @@ a status code of 4 if action should be taken, and zero if no action should be
 taken. However, various actions (shutdown, hibernate, suspend) can be provided
 with `--action` or `-a`.
 
-## Usage
+## Installation
+
+For people who use Arch btw, this package is available on the AUR as
+`reilysiegel-bear-git`.
+
+## Build
 
 Bear requires [Clojure CLI Tools](https://clojure.org/guides/getting_started)
 and optionally [GraalVM Native
@@ -62,23 +70,23 @@ time (on the order of seconds) than the native-image.
 Return exit code 4 if the battery is lower than 5%
 
 ```bash
-./bear --limit 5
+bear --limit 5
 ```
 
 Hibernate if the battery is lower than 10%
 ```bash
-./bear --limit 10 --action hibernate
+bear --limit 10 --action hibernate
 ```
 
 Shutdown if the battery is lower than 5%
 ```bash
-./bear --limit 5 --action shutdown
+bear --limit 5 --action shutdown
 ```
  
 Run in daemon mode, with a poll-rate of 30 seconds, and suspend when the battery
 is lower than 15%
 ```bash
-./bear --daemon --poll-rate 30 --limit 15 --action suspend
+bear --daemon --poll-rate 30 --limit 15 --action suspend
 ```
 
 Other options not covered here can be seen with `./bear --help`
